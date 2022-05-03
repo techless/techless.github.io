@@ -1,4 +1,4 @@
-import{_ as n,c as s}from"./app.d17c63fa.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># test workflow</span>
+import{_ as n,c as s}from"./app.575b5619.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># test workflow1</span>
 <span class="token comment"># \u5168\u5C40\u914D\u7F6E</span>
 <span class="token function">git</span> config --global user.name <span class="token string">&quot;techless&quot;</span>
 <span class="token function">git</span> config --global user.email <span class="token string">&quot;workth@163.com&quot;</span>
