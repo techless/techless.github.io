@@ -1,4 +1,4 @@
-import{_ as n,c as s}from"./app.79dcdc63.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u5168\u5C40\u914D\u7F6E</span>
+import{_ as n,e as s}from"./app.315632ba.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u5168\u5C40\u914D\u7F6E</span>
 <span class="token function">git</span> config --global user.name <span class="token string">&quot;techless&quot;</span>
 <span class="token function">git</span> config --global user.email <span class="token string">&quot;workth@163.com&quot;</span>
 <span class="token comment"># \u5C40\u90E8\u914D\u7F6E</span>
@@ -70,6 +70,8 @@ import{_ as n,c as s}from"./app.79dcdc63.js";const a={},e=s(`<h2 id="\u914D\u7F6
 <span class="token function">git</span> branch -f main HEAD~n
 <span class="token comment"># \u5220\u9664\u5206\u652F</span>
 <span class="token function">git</span> branch -d dev
+<span class="token comment"># \u5220\u9664\u8FDC\u7A0Bdev\u5206\u652F</span>
+<span class="token function">git</span> push origin -d dev
 <span class="token comment"># \u5FFD\u7565\u63D0\u9192\uFF0C\u5F3A\u5236\u5220\u9664dev\u5206\u652F</span>
 <span class="token function">git</span> branch -D dev
 <span class="token comment"># \u67E5\u770B\u5DF2\u5408\u5E76\u5206\u652F</span>
@@ -77,7 +79,7 @@ import{_ as n,c as s}from"./app.79dcdc63.js";const a={},e=s(`<h2 id="\u914D\u7F6
 <span class="token comment"># \u67E5\u770B\u672A\u5408\u5E76\u5206\u652F</span>
 <span class="token function">git</span> branch --no-merged
 
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="\u64A4\u9500-reset-revert-restore" tabindex="-1"><a class="header-anchor" href="#\u64A4\u9500-reset-revert-restore" aria-hidden="true">#</a> \u64A4\u9500 <code>reset</code> <code>revert</code> <code>restore</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u64A4\u9500\uFF0C\u4EC5\u672C\u5730\u6709\u6548\uFF0C\u672A\u63D0\u4EA4\u524D\u53EF\u4EE5\u4F7F\u7528</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="\u64A4\u9500-reset-revert-restore" tabindex="-1"><a class="header-anchor" href="#\u64A4\u9500-reset-revert-restore" aria-hidden="true">#</a> \u64A4\u9500 <code>reset</code> <code>revert</code> <code>restore</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u64A4\u9500\uFF0C\u4EC5\u672C\u5730\u6709\u6548\uFF0C\u672A\u63D0\u4EA4\u524D\u53EF\u4EE5\u4F7F\u7528</span>
 <span class="token function">git</span> reset HEAD~1
 <span class="token comment"># \u64A4\u9500\uFF0C\u751F\u6210\u65B0\u7EAA\u5F55\uFF0C\u7528\u4E8E\u8FDC\u7A0B\u63D0\u4EA4</span>
 <span class="token function">git</span> revert HEAD
