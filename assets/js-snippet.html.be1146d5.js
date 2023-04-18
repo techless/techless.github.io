@@ -1,1 +1,0 @@
-const t={key:"v-82dfaabe",path:"/front/js-snippet.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:165743778e4,contributors:[{name:"techless",email:"workth@163.com",commits:1}]},filePathRelative:"front/js-snippet.md"};export{t as data};

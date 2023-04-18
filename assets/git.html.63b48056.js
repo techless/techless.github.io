@@ -1,4 +1,4 @@
-import{_ as n,c as s}from"./app.22cf3675.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u5168\u5C40\u914D\u7F6E</span>
+import{_ as n,c as s}from"./app.58c1cda6.js";const a={},e=s(`<h2 id="\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E" aria-hidden="true">#</a> \u914D\u7F6E</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u5168\u5C40\u914D\u7F6E</span>
 <span class="token function">git</span> config --global user.name <span class="token string">&quot;techless&quot;</span>
 <span class="token function">git</span> config --global user.email <span class="token string">&quot;workth@163.com&quot;</span>
 <span class="token comment"># \u5C40\u90E8\u914D\u7F6E</span>
@@ -22,8 +22,8 @@ import{_ as n,c as s}from"./app.22cf3675.js";const a={},e=s(`<h2 id="\u914D\u7F6
 <span class="token function">git</span> log
 <span class="token comment"># \u67E5\u8BE2\u7248\u672C\u53D8\u52A8\u65E5\u5FD7</span>
 <span class="token function">git</span> log -p
-<span class="token comment"># \u67E5\u8BE2\u7248\u672C\u65E5\u5FD7 \u7B80\u7565\u4FE1\u606F</span>
-<span class="token function">git</span> log --oneline
+<span class="token comment"># \u67E5\u8BE2\u7248\u672C\u65E5\u5FD7 \u5355\u884C\u7B80\u7565\u4FE1\u606F \u8FD110\u6761</span>
+<span class="token function">git</span> log --oneline -10
 <span class="token comment"># \u67E5\u8BE2\u7248\u672C\u53D8\u52A8\u65E5\u5FD7\u6700\u8FD1\u4E00\u6B21</span>
 <span class="token function">git</span> log -p -1
 <span class="token comment"># \u67E5\u8BE2\u7248\u672C\u6587\u4EF6\u53D8\u52A8\u65E5\u5FD7</span>
@@ -46,7 +46,15 @@ import{_ as n,c as s}from"./app.22cf3675.js";const a={},e=s(`<h2 id="\u914D\u7F6
 <span class="token function">git</span> <span class="token function">add</span> xxx.txt
 <span class="token comment"># \u6DFB\u52A0\u6240\u6709\u6587\u4EF6\u5230\u6682\u5B58\u533A</span>
 <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="\u62C9\u53D6\u7248\u672C-pull" tabindex="-1"><a class="header-anchor" href="#\u62C9\u53D6\u7248\u672C-pull" aria-hidden="true">#</a> \u62C9\u53D6\u7248\u672C <code>pull</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> pull
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="\u63D0\u4EA4-commit" tabindex="-1"><a class="header-anchor" href="#\u63D0\u4EA4-commit" aria-hidden="true">#</a> \u63D0\u4EA4 <code>commit</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u63D0\u4EA4\u6682\u5B58\u533A\u5230\u672C\u5730\u4ED3\u5E93</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;\u63D0\u4EA4\u4FE1\u606F&quot;</span>
+<span class="token comment"># \u63D0\u4EA4\u6682\u5B58\u533A\u5230\u672C\u5730\u4ED3\u5E93\uFF0C-a \u4EE3\u8868\u6DFB\u52A0\u6240\u6709\u4FEE\u6539\u7684\u6587\u4EF6,\u4E0D\u5305\u62EC\u65B0\u5EFA\u6587\u4EF6</span>
+<span class="token function">git</span> commit -a -m <span class="token string">&quot;\u63D0\u4EA4\u4FE1\u606F&quot;</span>
+<span class="token comment"># --amend \u4EE3\u8868\u4FEE\u6539\u4E0A\u4E00\u6B21\u63D0\u4EA4\u7684\u4FE1\u606F</span>
+<span class="token function">git</span> commit --amend
+<span class="token comment"># --no-edit \u4EE3\u8868\u4E0D\u4FEE\u6539\u4E0A\u4E00\u6B21\u63D0\u4EA4\u7684\u4FE1\u606F,\u76F4\u63A5\u63D0\u4EA4</span>
+<span class="token function">git</span> commit --amend  --no-edit
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="\u62C9\u53D6\u7248\u672C-pull" tabindex="-1"><a class="header-anchor" href="#\u62C9\u53D6\u7248\u672C-pull" aria-hidden="true">#</a> \u62C9\u53D6\u7248\u672C <code>pull</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> pull
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="\u62C9\u53D6\u7248\u672C\u5BF9\u6BD4-fetch" tabindex="-1"><a class="header-anchor" href="#\u62C9\u53D6\u7248\u672C\u5BF9\u6BD4-fetch" aria-hidden="true">#</a> \u62C9\u53D6\u7248\u672C\u5BF9\u6BD4 <code>fetch</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> fetch
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="\u63A8\u9001\u7248\u672C\u5E93-push" tabindex="-1"><a class="header-anchor" href="#\u63A8\u9001\u7248\u672C\u5E93-push" aria-hidden="true">#</a> \u63A8\u9001\u7248\u672C\u5E93 <code>push</code></h3><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u63A8\u9001\u5230\u8FDC\u7A0B master \u5206\u652F [\u9700\u8981\u63D0\u524D\u8BBE\u7F6E\u597D\u8FDC\u7A0B\u4FE1\u606F]</span>
 <span class="token function">git</span> push -u origin master
@@ -115,4 +123,4 @@ import{_ as n,c as s}from"./app.22cf3675.js";const a={},e=s(`<h2 id="\u914D\u7F6
 <span class="token function">git</span> pull --rebase origin main
 <span class="token comment"># \u7136\u540E\u91CD\u65B0\u63D0\u4EA4</span>
 <span class="token function">git</span> push -u origin main
-</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div>`,41);function c(l,p){return e}var r=n(a,[["render",c],["__file","git.html.vue"]]);export{r as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div>`,43);function c(l,p){return e}var r=n(a,[["render",c],["__file","git.html.vue"]]);export{r as default};
