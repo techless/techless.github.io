@@ -1,0 +1,54 @@
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+    title: 'Techless Docs',
+    description: '记录学习过程、文档',
+    themeConfig: {
+        nav: [
+            {
+                text: '前端',
+                items: [
+                    { text: 'javascript', link: '/markdown-examples' },
+                    { text: 'vue2', link: '/markdown-examples' },
+                    { text: 'vue3', link: '/markdown-examples' },
+                    { text: 'typescript', link: '/markdown-examples' },
+                ],
+            },
+            {
+                text: '后端',
+                items: [
+                    { text: 'django', link: '/markdown-examples' },
+                    {
+                        text: 'django-rest-framework',
+                        link: '/markdown-examples',
+                    },
+                ],
+            },
+            {
+                text: '技术',
+                items: [
+                    { text: 'mysql', link: '/markdown-examples' },
+                    { text: 'redis', link: '/markdown-examples' },
+                    { text: 'nginx', link: '/markdown-examples' },
+                    { text: 'git', link: '/tech/git' },
+                    { text: 'docker', link: '/markdown-examples' },
+                    { text: 'linux', link: '/markdown-examples' },
+                    { text: 'shell', link: '/markdown-examples' },
+                ],
+            },
+            { text: '工具', link: '/markdown-examples' },
+            { text: '关于', link: '/markdown-examples' },
+        ],
+        sidebar: [
+            {
+                text: '目录',
+                items: [
+                    { text: '前端', items: [{ text: 'javascript', link: '/markdown-examples' }] },
+                    { text: '', link: '/tech/git' },
+                    { text: 'Runtime API Examples', link: '/api-examples' },
+                ],
+            },
+        ],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    },
+})
