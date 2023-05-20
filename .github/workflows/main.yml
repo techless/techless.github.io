@@ -1,27 +1,33 @@
-name: Deploy GitHub Pages
-
+name: Deploy
 on:
+  workflow_dispatch: {}
   push:
     branches:
       - main
-
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          persist-credentials: false
-
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+      - run: npm ci
       - name: Build
-        run: npm install && yarn build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        run: npm run docs:build
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
         with:
-          ACCESS_TOKEN: ${{ secrets.PERSONAL_TOKEN }} 
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
-
-
+          path: docs/.vitepress/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
