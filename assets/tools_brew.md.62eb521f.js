@@ -25,4 +25,6 @@ import{_ as s,o as n,c as a,O as l}from"./chunks/framework.4703df87.js";const E=
 <span class="line"><span style="color:#676E95;font-style:italic;"># 查询可用包</span></span>
 <span class="line"><span style="color:#FFCB6B;">brew</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">search</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">xxx</span></span>
 <span class="line"><span style="color:#676E95;font-style:italic;"># 显示包依赖</span></span>
-<span class="line"><span style="color:#FFCB6B;">brew</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">deps</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">xxx</span></span></code></pre></div>`,3),e=[o];function t(c,r,y,i,C,A){return n(),a("div",null,e)}const B=s(p,[["render",t]]);export{E as __pageData,B as default};
+<span class="line"><span style="color:#FFCB6B;">brew</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">deps</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">xxx</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;"># 显示安装的服务列表</span></span>
+<span class="line"><span style="color:#FFCB6B;">brew</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">services</span><span style="color:#A6ACCD;"> </span><span style="color:#C3E88D;">list</span></span></code></pre></div>`,3),e=[o];function t(c,r,y,i,C,A){return n(),a("div",null,e)}const B=s(p,[["render",t]]);export{E as __pageData,B as default};
