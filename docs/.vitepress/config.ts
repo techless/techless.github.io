@@ -35,6 +35,7 @@ export default defineConfig({
             },
             { text: '工具', items: [
                 { text: 'pyenv', link: '/tools/pyenv' },
+                { text: 'pipenv', link: '/tools/pipenv'},
                 { text: 'brew', link: '/tools/brew' }
             ] },
             { text: '配置', items: [{ text: '.zshrc', link: '/config/zshrc' }] },
