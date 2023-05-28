@@ -31,4 +31,6 @@ brew list
 brew search xxx
 # 显示包依赖
 brew deps xxx
+# 显示安装的服务列表
+brew services list
 ```
