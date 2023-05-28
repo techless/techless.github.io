@@ -9,20 +9,17 @@ export default defineConfig({
                 text: '前端',
                 items: [
                     { text: 'javascript', link: '/markdown-examples' },
-                    { text: 'vue2', link: '/markdown-examples' },
-                    { text: 'vue3', link: '/markdown-examples' },
                     { text: 'typescript', link: '/markdown-examples' },
-                ],
+                    { text: 'vue2', link: '/markdown-examples' },
+                    { text: 'vue3', link: '/markdown-examples' }
+                ]
             },
             {
                 text: '后端',
                 items: [
                     { text: 'django', link: '/markdown-examples' },
-                    {
-                        text: 'django-rest-framework',
-                        link: '/markdown-examples',
-                    },
-                ],
+                    { text: 'django-rest-framework', link: '/markdown-examples' }
+                ]
             },
             {
                 text: '技术',
@@ -33,22 +30,29 @@ export default defineConfig({
                     { text: 'git', link: '/tech/git' },
                     { text: 'docker', link: '/markdown-examples' },
                     { text: 'linux', link: '/markdown-examples' },
-                    { text: 'shell', link: '/markdown-examples' },
-                ],
+                    { text: 'shell', link: '/markdown-examples' }
+                ]
             },
-            { text: '工具', link: '/markdown-examples' },
-            { text: '关于', link: '/markdown-examples' },
+            { text: '工具', items: [
+                { text: 'pyenv', link: '/tools/pyenv' },
+                { text: 'brew', link: '/tools/brew' }
+            ] },
+            { text: '配置', items: [{ text: '.zshrc', link: '/config/zshrc' }] },
+            { text: '关于', link: '/markdown-examples' }
         ],
         sidebar: [
             {
                 text: '目录',
                 items: [
-                    { text: '前端', items: [{ text: 'javascript', link: '/markdown-examples' }] },
+                    {
+                        text: '前端',
+                        items: [{ text: 'javascript', link: '/markdown-examples' }]
+                    },
                     { text: '', link: '/tech/git' },
-                    { text: 'Runtime API Examples', link: '/api-examples' },
-                ],
-            },
+                    { text: 'Runtime API Examples', link: '/api-examples' }
+                ]
+            }
         ],
-        socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
-    },
+        socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
+    }
 })

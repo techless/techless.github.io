@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# GIT
+# Git
 
 ## 安装 Git
 
@@ -42,7 +42,7 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
- 使用 `--global` 选项，更改的配置文件位于用户主目录下，如果不使用，那么就是当前的仓库的配置文件。
+使用 `--global` 选项，更改的配置文件位于用户主目录下，如果不使用，那么就是当前的仓库的配置文件。
 
 #### 检查配置信息
 
@@ -103,7 +103,7 @@ git config --global alias.se '!git rev-list --all | xargs git grep -F'
 rank = shortlog -sn --no-merges
 ```
 
-## Git命令
+## Git 命令
 
 ### status
 
