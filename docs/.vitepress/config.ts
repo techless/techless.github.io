@@ -17,7 +17,7 @@ export default defineConfig({
             {
                 text: '后端',
                 items: [
-                    { text: 'django', link: '/markdown-examples' },
+                    { text: 'django', link: '/backend/django' },
                     { text: 'django-rest-framework', link: '/markdown-examples' }
                 ]
             },
