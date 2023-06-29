@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,O as l}from"./chunks/framework.4703df87.js";const E=JSON.parse('{"title":"Pipenv","description":"","frontmatter":{},"headers":[],"relativePath":"tools/pipenv.md"}'),p={name:"tools/pipenv.md"},e=l("",3),o=[e];function t(c,r,i,y,C,A){return n(),a("div",null,o)}const d=s(p,[["render",t]]);export{E as __pageData,d as default};
