@@ -1,9 +1,12 @@
 # Pipenv
 
 ## 命令
+
 ```shell
 # 查看当前环境位置
 pipenv --venv
+# 进入虚拟环境
+pipenv shell
 # 安装包到dev
 pipenv install --dev xxx
 # 查看项目位置
