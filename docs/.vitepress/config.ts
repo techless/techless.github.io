@@ -27,17 +27,21 @@ export default defineConfig({
                     { text: 'mysql', link: '/markdown-examples' },
                     { text: 'redis', link: '/markdown-examples' },
                     { text: 'nginx', link: '/markdown-examples' },
-                    { text: 'git', link: '/tech/git' },
                     { text: 'docker', link: '/markdown-examples' },
                     { text: 'linux', link: '/markdown-examples' },
                     { text: 'shell', link: '/markdown-examples' }
                 ]
             },
-            { text: '工具', items: [
-                { text: 'pyenv', link: '/tools/pyenv' },
-                { text: 'pipenv', link: '/tools/pipenv'},
-                { text: 'brew', link: '/tools/brew' }
-            ] },
+            {
+                text: '工具',
+                items: [
+                    { text: 'brew', link: '/tools/brew' },
+                    { text: 'git', link: '/tools/git' },
+                    { text: 'nrm', link: '/tools/nrm' },
+                    { text: 'pyenv', link: '/tools/pyenv' },
+                    { text: 'pipenv', link: '/tools/pipenv' }
+                ]
+            },
             { text: '配置', items: [{ text: '.zshrc', link: '/config/zshrc' }] },
             { text: '关于', link: '/markdown-examples' }
         ],

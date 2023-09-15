@@ -1,4 +1,6 @@
-# Pyenv
+# pyenv
+
+python版本管理工具
 
 ## 安装
 
@@ -6,8 +8,6 @@
 brew install pyenv
 brew install pyenv-virtualenv
 ```
-
-
 
 ## 命令
 

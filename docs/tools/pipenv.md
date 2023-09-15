@@ -1,4 +1,6 @@
-# Pipenv
+# pipenv
+
+Python 虚拟环境管理工具
 
 ## 命令
 
