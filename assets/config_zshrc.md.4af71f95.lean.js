@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,O as l}from"./chunks/framework.4703df87.js";const i=JSON.parse('{"title":".zshrc","description":"","frontmatter":{},"headers":[],"relativePath":"config/zshrc.md"}'),p={name:"config/zshrc.md"},o=l("",2),e=[o];function t(c,D,r,y,F,C){return a(),n("div",null,e)}const E=s(p,[["render",t]]);export{i as __pageData,E as default};

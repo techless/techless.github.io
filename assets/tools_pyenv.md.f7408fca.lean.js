@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,M as l}from"./chunks/framework.623678b7.js";const D=JSON.parse('{"title":"pyenv","description":"","frontmatter":{},"headers":[],"relativePath":"tools/pyenv.md"}'),p={name:"tools/pyenv.md"},e=l("",6),o=[e];function t(c,r,y,i,B,E){return n(),a("div",null,o)}const h=s(p,[["render",t]]);export{D as __pageData,h as default};
