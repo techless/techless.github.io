@@ -11,7 +11,9 @@ export default defineConfig({
                     { text: 'javascript', link: '/markdown-examples' },
                     { text: 'typescript', link: '/markdown-examples' },
                     { text: 'vue2', link: '/markdown-examples' },
-                    { text: 'vue3', link: '/markdown-examples' }
+                    { text: 'vue3', link: '/markdown-examples' },
+                    { text: 'nuxt2', link: '/markdown-examples' },
+                    { text: 'nuxt3', link: '/markdown-examples' }
                 ]
             },
             {
@@ -27,9 +29,7 @@ export default defineConfig({
                     { text: 'mysql', link: '/markdown-examples' },
                     { text: 'redis', link: '/markdown-examples' },
                     { text: 'nginx', link: '/markdown-examples' },
-                    { text: 'docker', link: '/markdown-examples' },
-                    { text: 'linux', link: '/markdown-examples' },
-                    { text: 'shell', link: '/markdown-examples' }
+                    { text: 'docker', link: '/tech/docker' }
                 ]
             },
             {
@@ -42,7 +42,16 @@ export default defineConfig({
                     { text: 'pipenv', link: '/tools/pipenv' }
                 ]
             },
-            { text: '配置', items: [{ text: '.zshrc', link: '/config/zshrc' }] },
+            {
+                text: '配置',
+                items: [
+                    { text: '.zshrc', link: '/config/zshrc' },
+                    {
+                        text: 'vscode settings',
+                        link: '/config/vscode-settings'
+                    }
+                ]
+            },
             { text: '关于', link: '/markdown-examples' }
         ],
         sidebar: [
