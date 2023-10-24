@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,M as l}from"./chunks/framework.272d2ada.js";const F=JSON.parse('{"title":"Docker","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"tech/docker.md"}'),p={name:"tech/docker.md"},o=l("",15),e=[o];function t(c,r,y,D,B,i){return a(),n("div",null,e)}const C=s(p,[["render",t]]);export{F as __pageData,C as default};

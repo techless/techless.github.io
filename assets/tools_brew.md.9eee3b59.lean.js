@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,M as l}from"./chunks/framework.623678b7.js";const C=JSON.parse('{"title":"Brew","description":"","frontmatter":{},"headers":[],"relativePath":"tools/brew.md"}'),p={name:"tools/brew.md"},o=l("",3),e=[o];function t(c,r,y,i,B,E){return n(),a("div",null,e)}const F=s(p,[["render",t]]);export{C as __pageData,F as default};

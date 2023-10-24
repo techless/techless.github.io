@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,M as l}from"./chunks/framework.272d2ada.js";const m=JSON.parse('{"title":"NRM","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"tools/nrm.md"}'),p={name:"tools/nrm.md"},o=l("",7),e=[o];function t(r,c,i,y,B,D){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{m as __pageData,d as default};
