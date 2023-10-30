@@ -76,6 +76,23 @@ docker logs -f <container>
 docker diff <container>
 ```
 
+## Docker Compose 命令
+
+### 
+
+```shell
+# 启动所有服务
+docker-compose up
+# 启动某几个服务
+docker-compose up <service1> <service2>
+# 启动所有服务并后台运行
+docker-compose up -d
+# 停止某几个服务
+docker-compose stop <service1> <service2>
+# 停止所有服务
+docker-compose stop
+```
+
 ## 详细
 
 ### 创建容器
