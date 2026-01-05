@@ -78,8 +78,6 @@ docker diff <container>
 
 ## Docker Compose 命令
 
-### 
-
 ```shell
 # 启动所有服务
 docker-compose up
