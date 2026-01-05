@@ -4,52 +4,55 @@ on:
   push:
     branches: ["main"]
 
-# 1. 设置权限：允许 GITHUB_TOKEN 写入 Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 2. 并发控制：防止多次推送导致部署冲突
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 构建任务
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. 新增：安装 pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # 你可以根据本地版本指定，例如 8 或 9
+
+      # 2. 修改：设置 Node 并开启 pnpm 缓存
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # 建议指定 Node 版本
-          cache: "npm" # 开启缓存，加快构建速度
+          node-version: "20"
+          cache: "pnpm" # 这里必须改成 pnpm
 
+      # 3. 修改：使用 pnpm 安装依赖
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
+      # 4. 修改：使用 pnpm 构建
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 指向你的构建输出目录 (VitePress 默认是这个)
           path: docs/.vitepress/dist
 
-  # 部署任务
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build # 必须等待 build 任务完成
+    needs: build
     steps:
-      # 4. 官方部署步骤
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
